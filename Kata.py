@@ -37,5 +37,15 @@ Tetris Series #1 — Scoring System (Python)
         #print(f"i={i} lines={lines} bal[i]={bal[i]} lvl={lvl} score={score} ")
 
     return score
+
+
+
+Find the odd int
+
+def find_it(seq):
+    set_l = set(seq)
+    for i in set_l:
+        if not seq.count(i) % 2 == 0:
+            return i
     """
 
