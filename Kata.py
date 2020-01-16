@@ -57,5 +57,34 @@ def nth_char(words):
     for num, i in enumerate(words):
         result += i[num]
     return result
+
+
+Decoded String by the Numbers (Python)
+
+
+def decode(str):
+    result = []
+    if str == '' :
+        return result
+    i =0
+    while i < len(str):
+        if str[i] == '\\':
+            i += 1
+            num = ''
+            while str[i] in ['0','1','2','3','4','5','6','7','8','9']:
+                num += str[i]
+                i += 1
+            num = int(num)
+            if num > len(str[i:]):
+                result.append(str[i:])
+                return result
+            else:
+                result.append(str[i:i+num])
+                i = i + num
+        else:
+            result.append(str[i])
+            i += 1
+
+    return result
     """
 
