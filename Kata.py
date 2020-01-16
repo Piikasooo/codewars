@@ -47,5 +47,15 @@ def find_it(seq):
     for i in set_l:
         if not seq.count(i) % 2 == 0:
             return i
+
+
+
+Substring fun (Python)
+
+def nth_char(words):
+    result = ''
+    for num, i in enumerate(words):
+        result += i[num]
+    return result
     """
 
