@@ -86,5 +86,17 @@ def decode(str):
             i += 1
 
     return result
+
+
+
+Array.diff (Python)
+
+
+def diff(first, second):
+        second = set(second)
+        return [item for item in first if item not in second]
+
+def array_diff(a, b):
+    return diff(a,b)
     """
 
