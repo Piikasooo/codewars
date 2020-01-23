@@ -98,5 +98,21 @@ def diff(first, second):
 
 def array_diff(a, b):
     return diff(a,b)
+
+
+
+
+ Thinking & Testing : Something capitalized (Python)
+
+def testit(s):
+    if s == "":
+        return ""
+    l = s.split(' ')
+    result =''
+    for i in l:
+        result += f"{i[:-1]}{i[-1].upper()} "
+    return result[:-1]
+
+
     """
 
