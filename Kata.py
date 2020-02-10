@@ -152,5 +152,29 @@ Are they the "same"? (Python)
         return True
     else:
         return False
+
+
+
+Dark Souls: Prepare To Die - Soul Level (Python)
+
+from math import pow
+def souls(character, build):
+    dict = { 'warrior': (4,86), 'knight':(5,86), 'wanderer':(3,86),\
+              'thief':(5,86), 'bandit':(4,86), 'hunter':(4,86), 'sorcerer':(3,82), 'pyromancer':(1,84),\
+              'cleric':(2,84), 'deprived':(6,88)}
+    lvl = dict[character][0]+(sum(build)-dict[character][1])
+    soul = [0,0, 673, 690, 707, 724, 741, 758, 775, 793, 811, 829]
+    ksoul = 0
+    for i in range(dict[character][0]+1,lvl+1):
+        print(f"-----")
+        temp = ksoul
+        print(f"{i} {ksoul}")
+        if i <= 11:
+            ksoul += soul[i]
+        else:
+            ksoul += round(pow(i, 3) * 0.02 + pow(i, 2) * 3.06 + 105.6 * i - 895)
+        print(f"{i} {ksoul} {ksoul- temp}")
+
+    return f"Starting as a {character}, level {lvl} will require {ksoul} souls."
     """
 
