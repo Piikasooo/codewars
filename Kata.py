@@ -114,5 +114,25 @@ def testit(s):
     return result[:-1]
 
 
+Arrh, grabscrab! (Python)
+
+def eq(a, b):
+    d = {}
+    for i in a:
+        if i not in d.keys():
+            d[i] = a.count(i)
+    for by in d.keys():
+        if b.count(by) != d[by]:
+            return False
+    return True
+
+
+def grabscrab(word, possible_words):
+    result = []
+    for i in possible_words:
+        if len(i) == len(word):
+            if eq(word, i):
+                result.append(i)
+    return result
     """
 
