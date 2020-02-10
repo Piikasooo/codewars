@@ -134,5 +134,23 @@ def grabscrab(word, possible_words):
             if eq(word, i):
                 result.append(i)
     return result
+
+
+
+Are they the "same"? (Python)
+
+    def comp(array1, array2):
+    print(array1)
+    if array1 is None or array2 is None:
+        return False
+    a = []
+    for i in array1:
+        a.append(i*i)
+    a.sort()
+    array2.sort()
+    if a == array2:
+        return True
+    else:
+        return False
     """
 
