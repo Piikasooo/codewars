@@ -176,5 +176,11 @@ def souls(character, build):
         print(f"{i} {ksoul} {ksoul- temp}")
 
     return f"Starting as a {character}, level {lvl} will require {ksoul} souls."
+
+
+
+Keep Hydrated! (SQL)
+
+    select id, hours, floor(hours * 0.5) as liters FROM cycling
     """
 
