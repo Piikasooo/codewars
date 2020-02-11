@@ -202,5 +202,16 @@ What's the real floor? (Python)
         return num-1
     if num > 13:
         return num-2
+
+
+
+No zeros for heros (Python)
+
+def no_boring_zeros(n):
+    if n == 0:
+        return n
+    while n%10 == 0:
+        n = n//10
+    return n
     """
 
