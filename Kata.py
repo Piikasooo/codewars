@@ -182,5 +182,15 @@ def souls(character, build):
 Keep Hydrated! (SQL)
 
     select id, hours, floor(hours * 0.5) as liters FROM cycling
+
+
+Convert number to reversed array of digits (Python)
+
+    def digitize(n):
+    res = []
+    while n>0:
+        res.append(n%10)
+        n=n//10
+    return res
     """
 
