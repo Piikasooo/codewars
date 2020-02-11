@@ -192,5 +192,15 @@ Convert number to reversed array of digits (Python)
         res.append(n%10)
         n=n//10
     return res
+
+
+What's the real floor? (Python)
+    def get_real_floor(num):
+    if num <= 0:
+        return num
+    if num < 13:
+        return num-1
+    if num > 13:
+        return num-2
     """
 
