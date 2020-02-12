@@ -220,5 +220,10 @@ Beginner Series #1 School Paperwork (Python)
     if n<0 or m <0:
         return 0
     return n*m
+
+
+Beginner Series #2 Clock (Python)
+    def past(h, m, s):
+    return s * 1000 + 60000 * m + 60000*60*h
     """
 
