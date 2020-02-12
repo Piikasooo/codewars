@@ -213,5 +213,12 @@ def no_boring_zeros(n):
     while n%10 == 0:
         n = n//10
     return n
+
+
+Beginner Series #1 School Paperwork (Python)
+    def paperwork(n, m):
+    if n<0 or m <0:
+        return 0
+    return n*m
     """
 
