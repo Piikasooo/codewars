@@ -225,5 +225,17 @@ Beginner Series #1 School Paperwork (Python)
 Beginner Series #2 Clock (Python)
     def past(h, m, s):
     return s * 1000 + 60000 * m + 60000*60*h
+
+
+
+
+Sum of Minimums! (Python)
+
+    def sum_of_minimums(numbers):
+    result = 0
+    for i in numbers:
+        i.sort()
+        result += i[0]
+    return result
     """
 
