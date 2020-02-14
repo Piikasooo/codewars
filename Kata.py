@@ -237,5 +237,14 @@ Sum of Minimums! (Python)
         i.sort()
         result += i[0]
     return result
+    
+    
+    
+ Drying Potatoes (Python)   
+   def potatoes(p0, w0, p1):
+    result = w0 * (100 - p0) // (100 - p1)
+    return result 
+    
+    
     """
 
