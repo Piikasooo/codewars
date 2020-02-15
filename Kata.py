@@ -297,5 +297,21 @@ Regexp Basics - is it a eight bit unsigned number? (Python)
         return int(n) >= 0 and int(n) < 64 and str(int(n)) == n
     except:
         return False
+        
+        
+        
+ Help Bob count letters and digits. (Python)       
+        
+    import string
+
+def count_letters_and_digits(s):
+    list = string.ascii_lowercase
+    list2 = string.ascii_uppercase
+    digits = string.digits
+    count = 0
+    for i in s:
+        if i in list or i in list2 or i in digits:
+            count += 1
+    return count
     """
 
