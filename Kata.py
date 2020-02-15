@@ -247,12 +247,31 @@ Sum of Minimums! (Python)
 
 
 Will you survive the zombie onslaught? (Python)
+
 def zombie_shootout(zombies, distance, ammo):
     range = distance * 2
     if zombies > ammo < range: 
         return f"You shot {ammo} zombies before being eaten: ran out of ammo."
     elif zombies > range: 
         return f"You shot {range} zombies before being eaten: overwhelmed."
-    return f"You shot all {zombies} zombies."     
+    return f"You shot all {zombies} zombies."    
+    
+    
+  Tetris Series #1 — Scoring System (Python)
+  
+    def get_score(arr) -> int:
+    lvl = 1
+    lines = 0 
+    score = 0
+    bal = {0:0, 1:40, 2:100, 3:300, 4:1200}
+    for i in arr:
+        if lines >= 10:
+            lines -= 10
+            lvl += 1
+        lines += i
+        score += bal[i]*lvl
+        #print(f"i={i} lines={lines} bal[i]={bal[i]} lvl={lvl} score={score} ")
+
+    return score
     """
 
