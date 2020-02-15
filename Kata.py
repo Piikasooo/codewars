@@ -287,5 +287,15 @@ Regexp Basics - is it a eight bit unsigned number? (Python)
             return False
     except:
         return False
+        
+        
+        
+  Regexp Basics - is it a six bit unsigned number? (Python)      
+        
+        def six_bit_number(n):
+    try:        
+        return int(n) >= 0 and int(n) < 64 and str(int(n)) == n
+    except:
+        return False
     """
 
