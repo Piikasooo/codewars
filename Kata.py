@@ -273,5 +273,19 @@ def zombie_shootout(zombies, distance, ammo):
         #print(f"i={i} lines={lines} bal[i]={bal[i]} lvl={lvl} score={score} ")
 
     return score
+    
+Regexp Basics - is it a eight bit unsigned number? (Python)
+
+  def eight_bit_number(n):
+    print(n)
+    if n == "":
+        return False
+    try:
+        if 0 <= int(n) < 256 and str(int(n))==n:
+            return True
+        else:
+            return False
+    except:
+        return False
     """
 
