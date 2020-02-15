@@ -244,7 +244,15 @@ Sum of Minimums! (Python)
    def potatoes(p0, w0, p1):
     result = w0 * (100 - p0) // (100 - p1)
     return result 
-    
-    
+
+
+Will you survive the zombie onslaught? (Python)
+def zombie_shootout(zombies, distance, ammo):
+    range = distance * 2
+    if zombies > ammo < range: 
+        return f"You shot {ammo} zombies before being eaten: ran out of ammo."
+    elif zombies > range: 
+        return f"You shot {range} zombies before being eaten: overwhelmed."
+    return f"You shot all {zombies} zombies."     
     """
 
