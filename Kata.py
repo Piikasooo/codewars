@@ -320,4 +320,17 @@ Number Of Occurrences (Python)
 def number_of_occurrences(element, sample):
     return sample.count(element)
 
+
+Lottery machine (Python)
+
+def lottery(s):
+    digit = '0123456789'
+    result = ''
+    for i in s:
+        if i in digit and i not in result:
+            result += i
+    if result == '':
+        return "One more run!"
+    else:
+        return result
 """
