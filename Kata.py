@@ -333,4 +333,13 @@ def lottery(s):
         return "One more run!"
     else:
         return result
+        
+  
+  Absent vowel (Python)
+  
+        def absent_vowel(s): 
+    list = 'aeiou'
+    for i, v in enumerate(list):
+        if v not in s:
+            return i
 """
