@@ -313,5 +313,11 @@ def count_letters_and_digits(s):
         if i in list or i in list2 or i in digits:
             count += 1
     return count
-    """
 
+
+Number Of Occurrences (Python)
+
+def number_of_occurrences(element, sample):
+    return sample.count(element)
+
+"""
