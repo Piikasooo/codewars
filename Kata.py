@@ -356,4 +356,16 @@ def lottery(s):
     mens = [x for x in sorted(set(arr)) if x % 2 == 0]
     boys = [x for x in sorted(set(arr), key=lambda n: -n) if x % 2 == 1]
     return mens + boys
+    
+    
+    
+  Form The Minimum (Python)
+  
+    def min_value(digits):
+    listt = list(set(digits))
+    listt.sort()
+    result = ''
+    for i in listt:
+        result += str(i)
+    return int(result)
 """
