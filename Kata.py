@@ -342,4 +342,10 @@ def lottery(s):
     for i, v in enumerate(list):
         if v not in s:
             return i
+            
+ Sum of angles (Python)
+ 
+  def angle(n):
+    return 180 * (n - 2)          
+            
 """
