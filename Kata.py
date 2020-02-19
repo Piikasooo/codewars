@@ -375,4 +375,14 @@ def lottery(s):
     dict = {product: amount * price for product, amount,
          price in zip(products, amounts, prices)}
     return sorted(dict.keys(), key=lambda x: dict[x], reverse=True)[:3]
+    
+    
+  The fusc function -- Part 1 (Python)
+  
+    def fusc(n):
+    if not n: return 0
+    elif n == 1: return 1
+    new = n // 2
+    if n % 2: return fusc(new) + fusc(new + 1)
+    return fusc(new)
 """
