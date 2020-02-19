@@ -368,4 +368,11 @@ def lottery(s):
     for i in listt:
         result += str(i)
     return int(result)
+    
+    
+    
+    def top3(products, amounts, prices):
+    dict = {product: amount * price for product, amount,
+         price in zip(products, amounts, prices)}
+    return sorted(dict.keys(), key=lambda x: dict[x], reverse=True)[:3]
 """
