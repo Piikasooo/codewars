@@ -399,4 +399,19 @@ def lottery(s):
     if day == 'Saturday' and num == 56: return True
     if day == 'Sunday' and (num == 666 or num == -666): return True
     return False
+    
+    
+    
+    Polydivisible Numbers
+    
+    def polydivisible(x):
+    s = str(x)
+    num = ''
+    kount = 1
+    for i in s:
+        num += i
+        if int(num) % kount != 0:
+            return False
+        kount += 1
+    return True
 """
