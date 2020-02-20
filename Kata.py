@@ -414,4 +414,18 @@ def lottery(s):
             return False
         kount += 1
     return True
+    
+    
+    
+    How many urinals are free? (Python)
+    
+    def get_free_urinals(urinals):
+    if urinals.count("11") > 0:
+        return -1   
+    urinals = "0" + urinals + "0"
+    kount = 0
+    while "000" in urinals:    
+        urinals = urinals.replace("000", "010", 1)
+        kount += 1      
+    return kount
 """
