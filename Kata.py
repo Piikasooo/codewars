@@ -428,4 +428,15 @@ def lottery(s):
         urinals = urinals.replace("000", "010", 1)
         kount += 1      
     return kount
+    
+    
+    
+    
+    String ends with? (Python)
+    def solution(string, ending):
+    
+    if string[len(string) - len(ending):] == ending:
+        return True
+    else:
+        return False
 """
