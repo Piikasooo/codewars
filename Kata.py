@@ -439,4 +439,13 @@ def lottery(s):
         return True
     else:
         return False
+        
+    
+    
+    Complete The Pattern #1
+    def pattern(n):
+    result = ''
+    for i in range(n):
+        result += f'{str(i+1) * (i+1)}\n'
+    return result[:-1]
 """
