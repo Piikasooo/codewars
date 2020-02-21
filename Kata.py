@@ -448,4 +448,22 @@ def lottery(s):
     for i in range(n):
         result += f'{str(i+1) * (i+1)}\n'
     return result[:-1]
+    
+    
+    
+    
+    
+    Complete The Pattern #2 (Python)
+    
+    def pattern(n):
+    s = str(n)
+    if n < 1:
+        return ''
+    lst = []
+    lst.append(s)
+    while n > 1:
+        n -= 1
+        s+=str(n)
+        lst.append(s)
+    return '\n'.join(lst[::-1])
 """
