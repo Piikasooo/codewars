@@ -466,4 +466,17 @@ def lottery(s):
         s+=str(n)
         lst.append(s)
     return '\n'.join(lst[::-1])
+    
+ 
+ 
+ 
+ See You Next Happy Year (Python)   
+    
+    def next_happy_year(year):
+  year += 1
+  while True:
+    if len(set(str(year))) == 4:
+      return year
+    else:
+      year += 1
 """
