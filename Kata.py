@@ -479,4 +479,11 @@ def lottery(s):
       return year
     else:
       year += 1
+      
+      
+      
+   Row Weights (Python)
+   
+      def row_weights(array):
+    return sum(array[::2]), sum(array[1::2])
 """
