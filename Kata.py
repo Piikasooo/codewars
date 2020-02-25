@@ -499,4 +499,15 @@ def lottery(s):
         count += count * percent + aug
         year += 1
     return year
+    
+    
+    
+    Extra Perfect Numbers (Special Numbers Series #7) (Python)
+    
+    def extra_perfect(n):
+    result = []
+    for i in range(1,n+1):
+        if bin(i)[2] == bin(i)[-1]:
+            result.append(i)
+    return(result)
 """
