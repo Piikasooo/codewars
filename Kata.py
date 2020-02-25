@@ -486,4 +486,17 @@ def lottery(s):
    
       def row_weights(array):
     return sum(array[::2]), sum(array[1::2])
+    
+    
+    
+ Growth of a Population (Python)   
+    
+    def nb_year(p0, percent, aug, p):
+    percent = percent / 100
+    count = p0
+    year = 0
+    while p > count:
+        count += count * percent + aug
+        year += 1
+    return year
 """
