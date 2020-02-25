@@ -510,4 +510,13 @@ def lottery(s):
         if bin(i)[2] == bin(i)[-1]:
             result.append(i)
     return(result)
+    
+    
+    
+    
+   Two Oldest Ages (Python) 
+    
+    def two_oldest_ages(ages):
+  ages.sort()
+  return ages[-2:]
 """
