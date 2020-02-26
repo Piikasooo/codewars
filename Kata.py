@@ -519,4 +519,16 @@ def lottery(s):
     def two_oldest_ages(ages):
   ages.sort()
   return ages[-2:]
+  
+  
+  
+  Looking for a benefactor (Python)
+  
+  import math
+def new_avg(arr, newavg): 
+    result = math.ceil(float((len(arr)+1))*newavg - sum(arr))
+    if result < 0:
+        raise ValueError
+    else:
+        return result
 """
