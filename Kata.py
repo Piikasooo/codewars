@@ -531,4 +531,18 @@ def new_avg(arr, newavg):
         raise ValueError
     else:
         return result
+ 
+ 
+ 
+ Consecutive Ducks (Python)
+ 
+ def consecutive_ducks(num):
+    sum = 0
+    for i in range(1,num//2):
+        sum += i
+        if sum > num:
+            continue
+        if (num-sum) % (i+1) == 0:
+            return True
+    return False
 """
