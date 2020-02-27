@@ -545,4 +545,18 @@ def new_avg(arr, newavg):
         if (num-sum) % (i+1) == 0:
             return True
     return False
+    
+    
+    
+    The Office VI - Sabbatical (Python)
+    
+    def sabb(s, value, happiness):
+    str = 'sabbatical'
+    for i in s:
+        if i in str:
+            value += 1
+    if value + happiness > 22:
+        return 'Sabbatical! Boom!'
+    else:
+        return "Back to your desk, boy."
 """
