@@ -559,4 +559,26 @@ def new_avg(arr, newavg):
         return 'Sabbatical! Boom!'
     else:
         return "Back to your desk, boy."
+        
+        
+   
+   Greatest Common Divisor Bitcount (Python)
+        
+    def hcfnaive(a,b): 
+    if(b==0): 
+        return a 
+    else: 
+        return hcfnaive(b,a%b)
+
+def binary_gcd(x, y):
+    result = hcfnaive(x,y)
+    if result > 0:
+        s = bin(result)[2:]
+    else:
+        s = bin(result)[3:]
+    result = 0
+    print(s)
+    for i in s:
+        result += int(i)
+    return result
 """
