@@ -592,4 +592,14 @@ def binary_gcd(x, y):
         if int(s[i]) < int(s[i-1]):
             return False
     return True
+    
+    
+    
+    Automorphic Number (Special Numbers Series #6) (Python)
+    
+    def automorphic(n):
+    if str(n) == str(n*n)[len(str(n*n))-len(str(n)):]:
+        return "Automorphic"
+    else:
+        return "Not!!"
 """
