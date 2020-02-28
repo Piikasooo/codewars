@@ -581,4 +581,15 @@ def binary_gcd(x, y):
     for i in s:
         result += int(i)
     return result
+    
+    
+    
+    Tidy Number (Special Numbers Series #9) (Python)
+    
+    def tidyNumber(n):
+    s = str(n)
+    for i in range(1,len(s)):
+        if int(s[i]) < int(s[i-1]):
+            return False
+    return True
 """
