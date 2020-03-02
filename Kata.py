@@ -603,10 +603,20 @@ def binary_gcd(x, y):
     else:
         return "Not!!"
         
-        
-        
-        
+              
         
         def make_move(sticks):
     return sticks%4
+    
+    
+    
+  List of all Rationals (Python)  
+    
+  def all_rationals():
+    tree = [(1, 1)]
+    for number in tree:
+        left, right = number
+        tree.append((left, left+right))
+        tree.append((left+right, right))
+        yield number
 """
