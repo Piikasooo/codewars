@@ -602,4 +602,11 @@ def binary_gcd(x, y):
         return "Automorphic"
     else:
         return "Not!!"
+        
+        
+        
+        
+        
+        def make_move(sticks):
+    return sticks%4
 """
