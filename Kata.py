@@ -619,4 +619,19 @@ def binary_gcd(x, y):
         tree.append((left, left+right))
         tree.append((left+right, right))
         yield number
+        
+        
+        
+  Product Array (Array Series #5) (Python)      
+        
+   def product_array(numbers):
+    result = []
+    for i in range(len(numbers)):
+        mul = 1
+        for index, value in enumerate(numbers):
+            if index != i :
+                mul *= value
+        result.append(mul)
+    return(result)     
+        
 """
