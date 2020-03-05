@@ -634,4 +634,10 @@ def binary_gcd(x, y):
         result.append(mul)
     return(result)     
         
+        
+     Nth Smallest Element (Array Series #4)   
+        
+        def nth_smallest(arr, pos):
+    arr.sort()
+    return arr[pos-1]
 """
