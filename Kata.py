@@ -648,4 +648,14 @@ def binary_gcd(x, y):
     import math as m
 def easyline(n):
     return m.factorial(2*n)//(m.factorial(n)**2)
+    
+    
+    
+    Thinkful - Number Drills: Blue and red marbles
+    
+    def guess_blue(blue_start, red_start, blue_pulled, red_pulled):
+    blue_in = blue_start - blue_pulled
+    red_in = red_start - red_pulled
+    result = blue_in / (blue_in + red_in)
+    return result
 """
