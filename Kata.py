@@ -640,4 +640,12 @@ def binary_gcd(x, y):
         def nth_smallest(arr, pos):
     arr.sort()
     return arr[pos-1]
+    
+    
+    
+    Easy Line (Python)
+    
+    import math as m
+def easyline(n):
+    return m.factorial(2*n)//(m.factorial(n)**2)
 """
