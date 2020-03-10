@@ -664,4 +664,19 @@ def easyline(n):
     
     def no_odds(values):
     return [x for x in values if x%2==0]
+    
+    
+    
+    Alternate capitalization (Python)
+    
+def capitalize(s):
+    result = ['','']
+    for i,c in enumerate(s):
+        if i % 2:
+            result[0] += c.lower() 
+            result[1] += c.upper() 
+        else:
+            result[0] +=  c.upper()
+            result[1] +=  c.lower()
+    return result
 """
