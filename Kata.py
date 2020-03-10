@@ -658,4 +658,10 @@ def easyline(n):
     red_in = red_start - red_pulled
     result = blue_in / (blue_in + red_in)
     return result
+    
+    
+   No oddities here (Python) 
+    
+    def no_odds(values):
+    return [x for x in values if x%2==0]
 """
