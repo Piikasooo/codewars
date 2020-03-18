@@ -679,4 +679,20 @@ def capitalize(s):
             result[0] +=  c.upper()
             result[1] +=  c.lower()
     return result
-"""
+
+
+
+
+Persistent Bugger. (Python)
+
+def persistence(n):
+    count = 0
+    while n > 9:
+        k = 1
+        for i in str(n):
+            k = k * int(i)
+        n = k
+        count += 1
+    return count
+    
+    """
