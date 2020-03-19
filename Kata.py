@@ -705,4 +705,17 @@ def persistence(n):
             c += int(i)
         n, c = c, 0
     return n
+    
+    
+    
+    
+    Detect Pangram (Python)
+    
+    import string
+
+def is_pangram(s):
+    for i in string.ascii_lowercase:
+        if i not in s.lower():
+            return False
+    return True
     """
