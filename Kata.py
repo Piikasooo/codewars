@@ -695,4 +695,14 @@ def persistence(n):
         count += 1
     return count
     
+    
+   Sum of Digits / Digital Root (Python) 
+    
+  def digital_root(n):
+    c = 0
+    while n > 9:
+        for i in str(n):
+            c += int(i)
+        n, c = c, 0
+    return n
     """
