@@ -718,4 +718,17 @@ def is_pangram(s):
         if i not in s.lower():
             return False
     return True
+    
+    
+    Duplicate Encoder (Python)
+    
+    def duplicate_encode(word):
+    res = ""
+    word=word.lower()
+    for i in word:
+        if word.count(i) >1:
+            res+=")"
+        else:
+            res+="("
+    return res
     """
