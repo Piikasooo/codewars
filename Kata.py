@@ -731,4 +731,41 @@ def is_pangram(s):
         else:
             res+="("
     return res
+    
+    
+    
+    Consonant value
+    
+    import string 
+def count_cost(s):
+    d = {}
+    for i , j in enumerate(string.ascii_lowercase):
+        d[j] = i+1
+    res = 0
+    for i in s:
+        res += d[i]
+    return res
+
+
+def solve(s):
+    lst = []
+    let = "aeiou"
+    i = 0
+    str = ''
+    while i < len(s):
+        if s[i] not in let:
+            str += s[i]
+        else:
+            if str != '':
+                lst.append(str)
+            str = ''
+        i += 1
+    if str != '':
+        lst.append(str)
+    
+    res = 0
+    for i in lst:
+        if count_cost(i) > res:
+            res = count_cost(i)
+    return res
     """
