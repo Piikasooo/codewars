@@ -768,4 +768,25 @@ def solve(s):
         if count_cost(i) > res:
             res = count_cost(i)
     return res
+    
+  
+  
+  More Zeros than Ones
+    
+   def decode(s):
+    bin_arr = s.encode()
+    bin_int = int.from_bytes(bin_arr, "big")
+    bin_str = bin(bin_int)
+    if len(bin_str[2:]) != 7:
+        bin_str = f'0{bin_str}'
+    return bin_str[2:]
+
+
+def more_zeros(s):
+    res = []
+    for i in s:
+        if decode(i).count('0') > decode(i).count('1') and i not in res:
+            res.append(i)
+    return res 
+    
     """
