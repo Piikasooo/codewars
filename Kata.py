@@ -789,4 +789,19 @@ def more_zeros(s):
             res.append(i)
     return res 
     
+    
+    
+    
+    
+    Sums of Parts
+    
+    
+    def parts_sums(ls):
+    res = []
+    count = sum(ls)
+    for i in ls :
+        res.append(count)
+        count -= i
+    res.append(0)
+    return res
     """
