@@ -804,4 +804,11 @@ def more_zeros(s):
         count -= i
     res.append(0)
     return res
+    
+    
+    
+    
+    Expressions Matter (Python)
+    def expression_matter(a, b, c):
+     return max(a + b + c, (a + b) * c, a * (b + c), a * b * c)
     """
