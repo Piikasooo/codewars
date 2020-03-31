@@ -811,4 +811,15 @@ def more_zeros(s):
     Expressions Matter (Python)
     def expression_matter(a, b, c):
      return max(a + b + c, (a + b) * c, a * (b + c), a * b * c)
+     
+     
+     
+     Will you make it? (Python)
+     
+     
+     def zero_fuel(distance_to_pump, mpg, fuel_left):
+    if distance_to_pump <= mpg * fuel_left:
+        return True
+    else:
+        return False
     """
