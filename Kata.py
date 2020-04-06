@@ -822,4 +822,13 @@ def more_zeros(s):
         return True
     else:
         return False
+        
+        
+        
+        
+      Find Screen Size (Python)  
+        
+     def find_screen_height(width, ratio): 
+    x, y = int(ratio.split(':')[0]), int(ratio.split(':')[1])
+    return f"{width}x{int(int(width)/x*y)}"
     """
