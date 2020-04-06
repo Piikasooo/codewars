@@ -831,4 +831,26 @@ def more_zeros(s):
      def find_screen_height(width, ratio): 
     x, y = int(ratio.split(':')[0]), int(ratio.split(':')[1])
     return f"{width}x{int(int(width)/x*y)}"
+    
+    
+    
+    
+    
+    Half Life (Python)
+    
+    import datetime
+def half_life(person1, person2):
+    p1_l = person1.split('-')
+    person1 = datetime.date(int(p1_l[0]), int(p1_l[1]), int(p1_l[2]))
+    
+    p2_l = person2.split('-')
+    person2 = datetime.date(int(p2_l[0]), int(p2_l[1]), int(p2_l[2]))
+    if person2 > person1:
+        min, max = person2, person1
+    else: 
+        max, min = person2, person1
+    
+    result = min + (min - max)
+    
+    return result.strftime("%Y-%m-%d")
     """
