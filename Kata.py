@@ -873,4 +873,17 @@ def half_life(person1, person2):
         result += 1
     
     return result
+    
+    
+    Responsible Drinking (Python)
+    
+    def hydrate(drink_string): 
+    list = drink_string.split(' ')
+    result = 0
+    for i in list:
+        if i[0] in '1234567890':
+            result += int(i)
+    if result == 1:
+        return "1 glass of water"
+    return f"{result} glasses of water"
     """
