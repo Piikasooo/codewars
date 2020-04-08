@@ -853,4 +853,24 @@ def half_life(person1, person2):
     result = min + (min - max)
     
     return result.strftime("%Y-%m-%d")
+    
+    
+    
+    
+    
+    Computer problem series #1: Fill the Hard Disk Drive (Python)
+    
+    
+    def save(sizes, hd): 
+    result = 0
+    link = 0
+    print(sizes)
+    print(hd)
+    for i in sizes:
+        link += i
+        if link > hd:
+            break
+        result += 1
+    
+    return result
     """
