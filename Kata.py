@@ -886,4 +886,19 @@ def half_life(person1, person2):
     if result == 1:
         return "1 glass of water"
     return f"{result} glasses of water"
+    
+    
+    
+    
+    
+    Difference of 2 (Python)
+    
+    def twos_difference(lst): 
+    result=[]
+    lst.sort()
+    for i in lst:
+        if (i+2) in lst:
+            result.append((i,i+2))
+    
+    return result
     """
