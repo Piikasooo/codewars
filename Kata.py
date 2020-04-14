@@ -901,4 +901,20 @@ def half_life(person1, person2):
             result.append((i,i+2))
     
     return result
+    
+    
+    
+    
+    
+    String Letter Counting (Python)
+    
+    import string
+def string_letter_count(s):
+    lst = list(set(s.lower()))
+    lst.sort()
+    result = ''
+    for i in lst:
+        if i in string.ascii_letters:
+            result += f"{s.lower().count(i)}{i}"
+    return result
     """
