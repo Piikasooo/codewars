@@ -917,4 +917,17 @@ def string_letter_count(s):
         if i in string.ascii_letters:
             result += f"{s.lower().count(i)}{i}"
     return result
+    
+    
+    
+    
+   Get the Middle Character 
+    
+    
+    def get_middle(s):
+    n = len(s) 
+    if n % 2 == 0 :
+        return "{}{}".format(s[n//2 - 1 ], s[n//2])
+    else:
+        return s[n//2]
     """
